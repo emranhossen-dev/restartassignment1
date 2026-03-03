@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwiftCart</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/2b4a5952d6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav>
-        
+    <nav class="bg-gray-800 text-white">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="logo text-2xl font-bold">
+                SwiftCart
+            </div>
+            <ul class="hidden md:flex flex-1 justify-center gap-6">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">Products</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-cart-arrow-down text-xl"></i>
+                <button id="menu-btn" class="text-2xl md:hidden focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <ul id="mobile-menu" class="hidden flex-col gap-4 px-4 pb-4 md:hidden bg-gray-700">
+            <li><a href="#" class="block text-white">Home</a></li>
+            <li><a href="#" class="block text-white">Products</a></li>
+            <li><a href="#" class="block text-white">About</a></li>
+            <li><a href="#" class="block text-white">Contact</a></li>
+        </ul>
     </nav>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
     <main>
         <section class="banner">
-
+            <div class="relative h-[400px]">
+                <div class="absolute inset-0 bg-cover bg-center"
+                    style="background-image: url(./Assets/banner-image.png);"></div>
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-start px-6">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Welcome to SwiftCart</h1>
+                    <p class="text-lg md:text-xl mb-8 text-white">
+                        Your one-stop shop for all your needs. Fast, reliable, and convenient shopping experience.
+                    </p>
+                    <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
         </section>
-        <section class="features">
+        <section class=" features">
 
         </section>
         <section class="trending">
@@ -27,4 +83,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
