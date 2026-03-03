@@ -90,12 +90,60 @@
                 </div>
             </div>
         </section>
-        <section class="trending">
-
+        <section class="py-16">
+            <div class="container mx-auto text-left mb-8">
+                <h2 class="text-3xl font-bold">Trending Now</h2>
+            </div>
+            <div id="trending-products" class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
         </section>
     </main>
-    <footer>
+    <section class="newslater bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to our Newsletter</h2>
+            <p class="text-gray-600 mb-6">Get the latest updates and offers straight to your inbox</p>
+            <div class="flex justify-center gap-2 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email"
+                    class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none">
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-r-md hover:bg-purple-700">Subscribe</button>
+            </div>
+        </div>
+    </section>
 
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-bold text-white mb-3">SwiftCart</h3>
+                <p class="text-gray-400">Fast, reliable, and convenient shopping experience for all your needs.</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="./index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="./products.html" class="hover:text-white">Products</a></li>
+                    <li><a href="./about.html" class="hover:text-white">About</a></li>
+                    <li><a href="./contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-3">Support</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">FAQs</a></li>
+                    <li><a href="#" class="hover:text-white">Shipping & Returns</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4">
+            &copy; 2026 SwiftCart. All rights reserved.
+        </div>
     </footer>
 
     <script src="script.js"></script>
